@@ -12,6 +12,8 @@ import './style.scss';
 import Header from 'header';
 import StorePerformance from './store-performance';
 import TopSellingProducts from './top-selling-products';
+import ChartBlock from './chart-block';
+import { getChartFromKey } from './chart-block/config';
 import { ReportFilters } from '@woocommerce/components';
 
 export default class Dashboard extends Component {
@@ -25,6 +27,24 @@ export default class Dashboard extends Component {
 				<div className="woocommerce-dashboard__columns">
 					<div>
 						<TopSellingProducts />
+					</div>
+				</div>
+				<div className="woocommerce-dashboard__columns">
+					<div>
+						<ChartBlock
+							charts={ getChartFromKey( 'gross_revenue' ) }
+							endpoint="revenue"
+							path={ path }
+							query={ query }
+						/>
+					</div>
+					<div>
+						<ChartBlock
+							charts={ getChartFromKey( 'orders_count' ) }
+							endpoint="orders"
+							path={ path }
+							query={ query }
+						/>
 					</div>
 				</div>
 			</Fragment>
