@@ -172,6 +172,32 @@ export const advancedFilters = {
 				rule: __( 'Select a quantity filter match', 'wc-admin' ),
 				title: __( 'Items Sold {{filter /}}', 'wc-admin' ),
 			},
+			rules: [
+				{
+					value: 'lessthan',
+					label: _x(
+						'Less Than',
+						'Logical "Less Than" (x < 10). Screenshot for context: https://cloudup.com/cZaDYBpzqsN',
+						'wc-admin'
+					),
+				},
+				{
+					value: 'morethan',
+					label: _x(
+						'More Than',
+						'Logical "More Than" (x > 10). Screenshot for context: https://cloudup.com/cZaDYBpzqsN',
+						'wc-admin'
+					),
+				},
+				{
+					value: 'between',
+					label: _x(
+						'Between',
+						'Logical "Between" (1 < x < 10). Screenshot for context: https://cloudup.com/cZaDYBpzqsN',
+						'wc-admin'
+					),
+				},
+			],
 			input: {
 				component: 'Number',
 				type: 'number', // or 'currency' ?
