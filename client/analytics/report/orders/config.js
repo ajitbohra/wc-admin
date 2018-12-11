@@ -165,6 +165,18 @@ export const advancedFilters = {
 				defaultOption: 'new',
 			},
 		},
+		quantity: {
+			labels: {
+				add: __( 'Items Sold', 'wc-admin' ),
+				remove: __( 'Remove quantity filter', 'wc-admin' ),
+				rule: __( 'Select a quantity filter match', 'wc-admin' ),
+				title: __( 'Items Sold {{filter /}}', 'wc-admin' ),
+			},
+			input: {
+				component: 'Number',
+				type: 'number', // or 'currency' ?
+			},
+		},
 	},
 };
 /*eslint-enable max-len*/
