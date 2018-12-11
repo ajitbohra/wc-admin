@@ -170,7 +170,7 @@ export const advancedFilters = {
 				add: __( 'Items Sold', 'wc-admin' ),
 				remove: __( 'Remove quantity filter', 'wc-admin' ),
 				rule: __( 'Select a quantity filter match', 'wc-admin' ),
-				title: __( 'Items Sold {{filter /}}', 'wc-admin' ),
+				title: __( 'Items Sold {{rule /}} {{filter /}}', 'wc-admin' ),
 			},
 			rules: [
 				{
