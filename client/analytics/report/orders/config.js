@@ -200,7 +200,7 @@ export const advancedFilters = {
 			],
 			input: {
 				component: 'Number',
-				type: 'number', // or 'currency' ?
+				type: 'currency', // or 'number' ?
 			},
 		},
 	},
