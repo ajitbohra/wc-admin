@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
  */
 import { Card } from '@woocommerce/components';
 import ReportChart from 'analytics/components/report-chart';
-import './style.scss';
+import './block.scss';
 class ChartBlock extends Component {
 	constructor() {
 		super( ...arguments );
